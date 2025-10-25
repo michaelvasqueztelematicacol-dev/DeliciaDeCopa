@@ -188,7 +188,7 @@ const productos = [
         nombre: "Ron Bacardí 750ml",
         categoria: "Bebidas",
         precio: 45000,
-        imagen: "",
+        imagen: "https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00761011301384l.jpg",
         descripcion: "Ron Bacardí Superior, perfecto para cócteles.",
         stock: true,
         destacado: true
@@ -198,7 +198,7 @@ const productos = [
         nombre: "Té Verde 500ml",
         categoria: "Bebidas",
         precio: 3500,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.ikxRPmu-sLF6OjM6rsg7KQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Té verde natural, antioxidantes naturales.",
         stock: true,
         destacado: false
@@ -210,7 +210,7 @@ const productos = [
         nombre: "Detergente Líquido 1L",
         categoria: "Limpieza",
         precio: 12000,
-        imagen: "",
+        imagen: "https://tse1.mm.bing.net/th/id/OIP.I_0v3FtMjinhacILubnvpwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Detergente líquido concentrado para ropa.",
         stock: true,
         destacado: true
@@ -220,7 +220,7 @@ const productos = [
         nombre: "Papel Higiénico 4 Rollos",
         categoria: "Aseo",
         precio: 8500,
-        imagen: "",
+        imagen: "https://www.puntofarma.com.py/imagenes/public/images/Papel-Higienico-Cuidado-Completo-Maxima-Higiene-Paquete-de-4-rollos-51575.jpg",
         descripcion: "Papel higiénico suave, 4 rollos por paquete.",
         stock: true,
         destacado: false
@@ -230,7 +230,7 @@ const productos = [
         nombre: "Jabón de Baño 3 Unidades",
         categoria: "Aseo",
         precio: 6500,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.7HXcep7t95-cqCQAWWM3PAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Jabón de baño hidratante, pack de 3 unidades.",
         stock: true,
         destacado: false
@@ -240,7 +240,7 @@ const productos = [
         nombre: "Cloro 1L",
         categoria: "Limpieza",
         precio: 4500,
-        imagen: "",
+        imagen: "https://tse1.mm.bing.net/th/id/OIP.sS-BHFAPPm3NU2xLxOhzKAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Cloro desinfectante para limpieza del hogar.",
         stock: true,
         destacado: false
@@ -250,7 +250,7 @@ const productos = [
         nombre: "Shampoo 400ml",
         categoria: "Cuidado Personal",
         precio: 8500,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.LxENVnRB16Y7hGYa9tgGvAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Shampoo nutritivo para todo tipo de cabello.",
         stock: true,
         destacado: true
@@ -260,7 +260,7 @@ const productos = [
         nombre: "Desinfectante Multiusos 500ml",
         categoria: "Limpieza",
         precio: 7500,
-        imagen: "",
+        imagen: "https://res.cloudinary.com/riqra/image/upload/h_380,c_limit,q_auto,f_auto/v1716915185/sellers/aje-peru/products/wh9gpbwc6sdg1wfrmm2n.png",
         descripcion: "Desinfectante multiusos, elimina gérmenes.",
         stock: true,
         destacado: false
@@ -270,7 +270,7 @@ const productos = [
         nombre: "Crema Dental 100g",
         categoria: "Cuidado Personal",
         precio: 4500,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.waPeD-mmqzkPwwumgwkZkgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Crema dental con flúor, protección completa.",
         stock: true,
         destacado: false
@@ -280,7 +280,7 @@ const productos = [
         nombre: "Toallas de Papel 2 Rollos",
         categoria: "Limpieza",
         precio: 5500,
-        imagen: "",
+        imagen: "https://www.prisa.cl/media/cache/attachment/filter/product_gallery_main/b6b1adc76b36bd6a7f81344215e93277/97463/63c6de1a9e655919251850.png",
         descripcion: "Toallas de papel absorbentes, 2 rollos.",
         stock: true,
         destacado: false
@@ -290,7 +290,7 @@ const productos = [
         nombre: "Suavizante de Ropa 1L",
         categoria: "Limpieza",
         precio: 9500,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.54bo2jJK4dOvFjbWVC8NUgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Suavizante de ropa con aroma fresco.",
         stock: true,
         destacado: true
@@ -300,7 +300,7 @@ const productos = [
         nombre: "Desodorante Roll-On 50ml",
         categoria: "Cuidado Personal",
         precio: 6500,
-        imagen: "",
+        imagen: "https://static.buale.cl/wp-content/uploads/2024/04/DEO077.jpg",
         descripcion: "Desodorante roll-on, protección de 24 horas.",
         stock: true,
         destacado: false
@@ -312,7 +312,7 @@ const productos = [
         nombre: "Arroz Blanco 1kg",
         categoria: "Comestibles",
         precio: 3500,
-        imagen: "",
+        imagen: "https://tiendasmajuca.com/wp-content/uploads/2023/04/001526.jpeg",
         descripcion: "Arroz blanco de grano largo, calidad premium.",
         stock: true,
         destacado: true
@@ -322,7 +322,7 @@ const productos = [
         nombre: "Aceite de Cocina 900ml",
         categoria: "Comestibles",
         precio: 8500,
-        imagen: "",
+        imagen: "https://en1ya.com/wp-content/uploads/2023/03/ACEITE-OLEOCALI-X900ml.jpg",
         descripcion: "Aceite vegetal para cocinar y freír.",
         stock: true,
         destacado: false
@@ -332,7 +332,7 @@ const productos = [
         nombre: "Frijoles Rojos 500g",
         categoria: "Comestibles",
         precio: 4500,
-        imagen: "",
+        imagen: "https://vaquitaexpress.com.co/media/catalog/product/cache/e89ece728e3939ca368b457071d3c0be/7/7/7707231960099_33.jpg",
         descripcion: "Frijoles rojos secos, ricos en proteínas.",
         stock: true,
         destacado: false
@@ -342,7 +342,7 @@ const productos = [
         nombre: "Azúcar Blanca 1kg",
         categoria: "Comestibles",
         precio: 3200,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.HJCr76uuL5oucRTXBOQUXwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Azúcar blanca refinada, endulzante natural.",
         stock: true,
         destacado: false
@@ -352,7 +352,7 @@ const productos = [
         nombre: "Harina de Trigo 1kg",
         categoria: "Comestibles",
         precio: 2800,
-        imagen: "",
+        imagen: "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750106921001L.jpg",
         descripcion: "Harina de trigo para panadería y repostería.",
         stock: true,
         destacado: true
@@ -362,7 +362,7 @@ const productos = [
         nombre: "Sal de Mesa 500g",
         categoria: "Comestibles",
         precio: 1500,
-        imagen: "",
+        imagen: "https://jumbocolombiaio.vtexassets.com/arquivos/ids/493172/7703812401395-1.jpg?v=638218539707730000",
         descripcion: "Sal de mesa yodada, condimento esencial.",
         stock: true,
         destacado: false
@@ -372,7 +372,7 @@ const productos = [
         nombre: "Pasta Espagueti 500g",
         categoria: "Comestibles",
         precio: 3800,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.7COd1Exf8SqFeiH1y8g13QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Pasta espagueti italiana, calidad premium.",
         stock: true,
         destacado: false
@@ -382,7 +382,7 @@ const productos = [
         nombre: "Café Molido 500g",
         categoria: "Comestibles",
         precio: 12000,
-        imagen: "",
+        imagen: "https://walmartcr.vtexassets.com/arquivos/ids/287189-500-auto?v=1770752839&width=500&height=auto&aspect=true",
         descripcion: "Café molido 100% colombiano, aroma intenso.",
         stock: true,
         destacado: true
@@ -392,7 +392,7 @@ const productos = [
         nombre: "Atún en Lata 170g",
         categoria: "Comestibles",
         precio: 4500,
-        imagen: "",
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_631221-MLA74524965099_022024-O.webp",
         descripcion: "Atún en lata en aceite, rico en proteínas.",
         stock: true,
         destacado: false
@@ -402,7 +402,7 @@ const productos = [
         nombre: "Sardinas en Lata 120g",
         categoria: "Comestibles",
         precio: 3500,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.zAUOXb1TwNN9lcS0JeYljwHaEM?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Sardinas en lata con tomate, omega 3.",
         stock: true,
         destacado: false
@@ -414,7 +414,7 @@ const productos = [
         nombre: "Jabón Facial 100g",
         categoria: "Cuidado Personal",
         precio: 8500,
-        imagen: "",
+        imagen: "https://tse1.mm.bing.net/th/id/OIP.EYS2pRKHsvgu3t8jLYSt3gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Jabón facial limpiador, piel suave y fresca.",
         stock: true,
         destacado: true
@@ -424,7 +424,7 @@ const productos = [
         nombre: "Crema Hidratante 200ml",
         categoria: "Cuidado Personal",
         precio: 12000,
-        imagen: "",
+        imagen: "https://detqhtv6m6lzl.cloudfront.net/HCLContenido/producto/FullImage/7501054500193-01.jpg",
         descripcion: "Crema hidratante corporal, nutrición profunda.",
         stock: true,
         destacado: false
@@ -434,7 +434,7 @@ const productos = [
         nombre: "Protector Solar 60ml",
         categoria: "Cuidado Personal",
         precio: 18000,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.0C-yuEHPrIQi1FR10-R3qQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Protector solar FPS 50, protección UV.",
         stock: true,
         destacado: true
@@ -444,7 +444,7 @@ const productos = [
         nombre: "Enjuague Bucal 500ml",
         categoria: "Cuidado Personal",
         precio: 9500,
-        imagen: "",
+        imagen: "https://tse1.mm.bing.net/th/id/OIP.KPfUFcNibtQnYzprrEjYMgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Enjuague bucal antiséptico, frescura duradera.",
         stock: true,
         destacado: false
@@ -454,7 +454,7 @@ const productos = [
         nombre: "Cepillo de Dientes",
         categoria: "Cuidado Personal",
         precio: 3500,
-        imagen: "",
+        imagen: "https://images-na.ssl-images-amazon.com/images/I/81Eb6ZnJDnL._SL1500_.jpg",
         descripcion: "Cepillo de dientes suave, limpieza efectiva.",
         stock: true,
         destacado: false
@@ -464,7 +464,7 @@ const productos = [
         nombre: "Hilo Dental 50m",
         categoria: "Cuidado Personal",
         precio: 4500,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.VEoFs33zuF5lhovyf34I7AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Hilo dental encerado, limpieza interdental.",
         stock: true,
         destacado: false
@@ -474,7 +474,7 @@ const productos = [
         nombre: "Champú Anticaspa 400ml",
         categoria: "Cuidado Personal",
         precio: 10500,
-        imagen: "",
+        imagen: "https://hebmx.vtexassets.com/arquivos/ids/823062-800-800?v=638521869072870000&width=800&height=800&aspect=true",
         descripcion: "Champú anticaspa, control efectivo.",
         stock: true,
         destacado: true
@@ -484,7 +484,7 @@ const productos = [
         nombre: "Acondicionador 400ml",
         categoria: "Cuidado Personal",
         precio: 8500,
-        imagen: "",
+        imagen: "https://sicleanchile.cl/wp-content/uploads/2024/10/image_2024-10-30_163823412.png",
         descripcion: "Acondicionador nutritivo, cabello sedoso.",
         stock: true,
         destacado: false
@@ -494,7 +494,7 @@ const productos = [
         nombre: "Crema de Manos 100ml",
         categoria: "Cuidado Personal",
         precio: 6500,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.TR6ZSqT7N6-rtq5A6gK5pwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Crema de manos hidratante, absorción rápida.",
         stock: true,
         destacado: false
@@ -504,7 +504,7 @@ const productos = [
         nombre: "Desodorante en Spray 150ml",
         categoria: "Cuidado Personal",
         precio: 7500,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.gFV7JDY2odV6WohsSm6R3gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Desodorante en spray, frescura todo el día.",
         stock: true,
         destacado: true
@@ -516,7 +516,7 @@ const productos = [
         nombre: "Plátano Verde 1kg",
         categoria: "Frutas",
         precio: 3500,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.cYRHvFLSM9H4UHg97XGZBQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Plátano verde fresco, ideal para cocinar.",
         stock: true,
         destacado: true
@@ -526,7 +526,7 @@ const productos = [
         nombre: "Tomate 1kg",
         categoria: "Verduras",
         precio: 4500,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.vvL0H3mE56Q1wVKY-aA55AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Tomate fresco, perfecto para ensaladas.",
         stock: true,
         destacado: false
@@ -536,7 +536,7 @@ const productos = [
         nombre: "Cebolla 1kg",
         categoria: "Verduras",
         precio: 2800,
-        imagen: "",
+        imagen: "https://walmartcr.vtexassets.com/arquivos/ids/530044/Cebolla-Mini-Malla-En-Red-1Kg-14-A-15-Unidades-Aproximadamente-2-26263.jpg?v=638419991713700000",
         descripcion: "Cebolla fresca, base para muchos platos.",
         stock: true,
         destacado: false
@@ -546,7 +546,7 @@ const productos = [
         nombre: "Papa 2kg",
         categoria: "Verduras",
         precio: 5500,
-        imagen: "",
+        imagen: "https://th.bing.com/th/id/R.795366fc302f4309208a4063d5cab371?rik=LT%2bDTMmPg7ffjQ&pid=ImgRaw&r=0",
         descripcion: "Papa fresca, versátil para cocinar.",
         stock: true,
         destacado: true
@@ -556,7 +556,7 @@ const productos = [
         nombre: "Zanahoria 1kg",
         categoria: "Verduras",
         precio: 3200,
-        imagen: "",
+        imagen: "https://th.bing.com/th/id/R.9f27676435e9093778c705da66ca4193?rik=d5ZBo2vnJjcPMQ&pid=ImgRaw&r=0",
         descripcion: "Zanahoria fresca, rica en betacaroteno.",
         stock: true,
         destacado: false
@@ -566,7 +566,7 @@ const productos = [
         nombre: "Lechuga 1 Unidad",
         categoria: "Verduras",
         precio: 2500,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.kYE_HJICZotHIiTAs3r3-wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Lechuga fresca, crujiente para ensaladas.",
         stock: true,
         destacado: false
@@ -576,7 +576,7 @@ const productos = [
         nombre: "Naranja 1kg",
         categoria: "Frutas",
         precio: 3800,
-        imagen: "",
+        imagen: "https://www.supergarzon.com/site/lasamericas/5657-large_default/naranja-1kg-web.jpg",
         descripcion: "Naranja fresca, rica en vitamina C.",
         stock: true,
         destacado: true
@@ -586,7 +586,7 @@ const productos = [
         nombre: "Manzana 1kg",
         categoria: "Frutas",
         precio: 6500,
-        imagen: "",
+        imagen: "https://eresloquecomes.com.ar/426-large_default/manzana-roja-1kg-organica.jpg",
         descripcion: "Manzana fresca, crujiente y dulce.",
         stock: true,
         destacado: false
@@ -596,7 +596,7 @@ const productos = [
         nombre: "Limón 1kg",
         categoria: "Frutas",
         precio: 4200,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.R9t7PWez3bnUh9CMeHL9mwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Limón fresco, perfecto para aderezar.",
         stock: true,
         destacado: false
@@ -606,7 +606,7 @@ const productos = [
         nombre: "Aguacate 1kg",
         categoria: "Frutas",
         precio: 8500,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.b8TaZOLpjzjOoNlZjC-l6QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Aguacate fresco, rico en grasas saludables.",
         stock: true,
         destacado: true
@@ -618,7 +618,7 @@ const productos = [
         nombre: "Pollo Entero 1.5kg",
         categoria: "Carnes",
         precio: 18500,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.3wDSE0oCYVqYuU-M4YX_sQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Pollo entero fresco, ideal para asar.",
         stock: true,
         destacado: true
@@ -628,7 +628,7 @@ const productos = [
         nombre: "Carne Molida 500g",
         categoria: "Carnes",
         precio: 12000,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.6baiKLioN8_MJZIz_kT4ngHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Carne molida fresca, perfecta para hamburguesas.",
         stock: true,
         destacado: false
@@ -638,7 +638,7 @@ const productos = [
         nombre: "Pechuga de Pollo 1kg",
         categoria: "Carnes",
         precio: 15000,
-        imagen: "",
+        imagen: "https://tiendahabana.com/wp-content/uploads/2024/06/pechuga-1-kg.jpg",
         descripcion: "Pechuga de pollo sin hueso, baja en grasa.",
         stock: true,
         destacado: true
@@ -648,7 +648,7 @@ const productos = [
         nombre: "Chuleta de Cerdo 1kg",
         categoria: "Carnes",
         precio: 18000,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.EM5t9UBwJGpJtag601nj2gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Chuleta de cerdo fresca, ideal para asar.",
         stock: true,
         destacado: false
@@ -658,7 +658,7 @@ const productos = [
         nombre: "Salchichas 500g",
         categoria: "Carnes",
         precio: 8500,
-        imagen: "",
+        imagen: "https://tse1.mm.bing.net/th/id/OIP.qb36leme6FV8MuEGlMO69wHaEu?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Salchichas frescas, perfectas para parrilla.",
         stock: true,
         destacado: false
@@ -668,7 +668,7 @@ const productos = [
         nombre: "Jamón Cocido 300g",
         categoria: "Carnes",
         precio: 12000,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.xSfU7h6xKVMYXmEt0_UywAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Jamón cocido en lonchas, sabor suave.",
         stock: true,
         destacado: true
@@ -678,7 +678,7 @@ const productos = [
         nombre: "Tocino 250g",
         categoria: "Carnes",
         precio: 9500,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.xfuIyAsOrrB6Kej7oF5E3wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Tocino ahumado, perfecto para desayunos.",
         stock: true,
         destacado: false
@@ -688,7 +688,7 @@ const productos = [
         nombre: "Chorizo 300g",
         categoria: "Carnes",
         precio: 8500,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.X_7QgYsIHMjmXAm007rYMQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Chorizo fresco, sabor tradicional.",
         stock: true,
         destacado: false
@@ -698,7 +698,7 @@ const productos = [
         nombre: "Costilla de Cerdo 1kg",
         categoria: "Carnes",
         precio: 22000,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.RkUM4iTgymFaBebvJHPtTAHaGV?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Costilla de cerdo fresca, ideal para barbacoa.",
         stock: true,
         destacado: true
@@ -708,7 +708,7 @@ const productos = [
         nombre: "Hígado de Res 500g",
         categoria: "Carnes",
         precio: 8500,
-        imagen: "",
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_665293-MLA72599684152_112023-O.webp",
         descripcion: "Hígado de res fresco, rico en hierro.",
         stock: true,
         destacado: false
@@ -720,7 +720,7 @@ const productos = [
         nombre: "Pan Blanco 1 Unidad",
         categoria: "Panadería",
         precio: 2500,
-        imagen: "",
+        imagen: "https://tse2.mm.bing.net/th/id/OIP.JC5KvWho0AXFoaf_K2bVngHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Pan blanco fresco, ideal para desayunos.",
         stock: true,
         destacado: true
@@ -730,7 +730,7 @@ const productos = [
         nombre: "Pan Integral 1 Unidad",
         categoria: "Panadería",
         precio: 3500,
-        imagen: "",
+        imagen: "https://th.bing.com/th/id/R.79cb54c0511ea2bfa6b1a4e1422fb2cf?rik=biI9F7PpPQ3bzg&pid=ImgRaw&r=0",
         descripcion: "Pan integral fresco, rico en fibra.",
         stock: true,
         destacado: false
@@ -740,7 +740,7 @@ const productos = [
         nombre: "Croissants 6 Unidades",
         categoria: "Panadería",
         precio: 8500,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.Vu6ydNxTB0saqTVDpDT_EwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Croissants recién horneados, crujientes.",
         stock: true,
         destacado: true
@@ -750,7 +750,7 @@ const productos = [
         nombre: "Donas 6 Unidades",
         categoria: "Panadería",
         precio: 12000,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.ZUoG5f-iEcPPkgs_WWgeEAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Donas glaseadas, dulces y esponjosas.",
         stock: true,
         destacado: false
@@ -760,7 +760,7 @@ const productos = [
         nombre: "Torta de Chocolate 1 Unidad",
         categoria: "Panadería",
         precio: 25000,
-        imagen: "",
+        imagen: "https://a0.soysuper.com/a44cadd165967e6604c0536aaac5f31c.600.0.0.0.wmark.edf1bdb7.jpg",
         descripcion: "Torta de chocolate casera, deliciosa.",
         stock: true,
         destacado: true
@@ -770,7 +770,7 @@ const productos = [
         nombre: "Galletas de Avena 200g",
         categoria: "Panadería",
         precio: 6500,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.Z6_1NhieCIWwgQEv8DMxOAHaIO?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Galletas de avena caseras, saludables.",
         stock: true,
         destacado: false
@@ -780,7 +780,7 @@ const productos = [
         nombre: "Empanadas 6 Unidades",
         categoria: "Panadería",
         precio: 15000,
-        imagen: "",
+        imagen: "https://jumboargentina.vtexassets.com/arquivos/ids/857700/Empanadas-Roast-Beef-X-6-Unidades-Zen-1-1035023.jpg?v=638761810189770000",
         descripcion: "Empanadas de carne, sabor tradicional.",
         stock: true,
         destacado: true
@@ -790,7 +790,7 @@ const productos = [
         nombre: "Almojábanas 4 Unidades",
         categoria: "Panadería",
         precio: 8500,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.5X4s8SGR2JEO52XKLiCjYAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Almojábanas frescas, queso y cuajada.",
         stock: true,
         destacado: false
@@ -800,7 +800,7 @@ const productos = [
         nombre: "Pan de Queso 8 Unidades",
         categoria: "Panadería",
         precio: 12000,
-        imagen: "",
+        imagen: "https://tse3.mm.bing.net/th/id/OIP.8b94kPE9B-l5A6vOuAOvfQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Pan de queso casero, sabor auténtico.",
         stock: true,
         destacado: true
@@ -810,7 +810,7 @@ const productos = [
         nombre: "Buñuelos 6 Unidades",
         categoria: "Panadería",
         precio: 9500,
-        imagen: "",
+        imagen: "https://dpapagayo.com/wp-content/uploads/2023/09/BUNUELOS-PAN-PA-YA-DISPLAY-6-UNIDADES-DE-65G.jpg",
         descripcion: "Buñuelos fritos, tradición navideña.",
         stock: true,
         destacado: false
@@ -822,7 +822,7 @@ const productos = [
         nombre: "Huevos 30 Unidades",
         categoria: "Comestibles",
         precio: 12000,
-        imagen: "",
+        imagen: "https://tse4.mm.bing.net/th/id/OIP.sreD-yljUZgD-IOsjKkkMwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         descripcion: "Huevos frescos de gallina, 30 unidades.",
         stock: true,
         destacado: true
@@ -832,7 +832,7 @@ const productos = [
         nombre: "Mantequilla de Maní 500g",
         categoria: "Comestibles",
         precio: 8500,
-        imagen: "",
+        imagen: "https://allfitness.cl/wp-content/uploads/2021/05/MANTEQUILLA-DE-MANI-500-300x300.png",
         descripcion: "Mantequilla de maní natural, sin azúcar.",
         stock: true,
         destacado: false
@@ -842,7 +842,7 @@ const productos = [
         nombre: "Miel de Abeja 500g",
         categoria: "Comestibles",
         precio: 12000,
-        imagen: "",
+        imagen: "https://artemisa.co/cdn/shop/products/miel-de-abejas-x-500-gr-750576.jpg?v=1623951520",
         descripcion: "Miel de abeja pura, endulzante natural.",
         stock: true,
         destacado: true
@@ -852,7 +852,7 @@ const productos = [
         nombre: "Vinagre Blanco 500ml",
         categoria: "Comestibles",
         precio: 3500,
-        imagen: "",
+        imagen: "https://olimpica.vtexassets.com/arquivos/ids/607501-800-450?v=637626496866630000&width=800&height=450&aspect=true",
         descripcion: "Vinagre blanco, perfecto para aderezos.",
         stock: true,
         destacado: false
@@ -862,7 +862,7 @@ const productos = [
         nombre: "Salsa de Tomate 500g",
         categoria: "Comestibles",
         precio: 4500,
-        imagen: "",
+        imagen: "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000266/salsa-de-tomate-zev-500-g-01.png",
         descripcion: "Salsa de tomate natural, sin conservantes.",
         stock: true,
         destacado: false
@@ -872,7 +872,7 @@ const productos = [
         nombre: "Mostaza 200g",
         categoria: "Comestibles",
         precio: 3500,
-        imagen: "",
+        imagen: "https://olimpica.vtexassets.com/arquivos/ids/1461353/7702014632057_1.jpg?v=638557221300500000",
         descripcion: "Mostaza amarilla, sabor tradicional.",
         stock: true,
         destacado: false
@@ -882,7 +882,7 @@ const productos = [
         nombre: "Mayonesa 500g",
         categoria: "Comestibles",
         precio: 5500,
-        imagen: "",
+        imagen: "https://olimpica.vtexassets.com/arquivos/ids/1426080/7701008844261.jpg?v=638518094031530000",
         descripcion: "Mayonesa cremosa, perfecta para sándwiches.",
         stock: true,
         destacado: true
@@ -892,7 +892,7 @@ const productos = [
         nombre: "Ketchup 500g",
         categoria: "Comestibles",
         precio: 4500,
-        imagen: "",
+        imagen: "https://www.pfpi.ae/directory/wp-content/uploads/2020/02/American-Gourmet-Ketchup-500g-topdown.png",
         descripcion: "Ketchup de tomate, sabor clásico.",
         stock: true,
         destacado: false
@@ -902,7 +902,7 @@ const productos = [
         nombre: "Ajo en Polvo 50g",
         categoria: "Comestibles",
         precio: 2500,
-        imagen: "",
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_723895-MCO89575595097_082025-O.webp",
         descripcion: "Ajo en polvo, condimento versátil.",
         stock: true,
         destacado: false
@@ -912,7 +912,7 @@ const productos = [
         nombre: "Pimienta Negra 50g",
         categoria: "Comestibles",
         precio: 3500,
-        imagen: "",
+        imagen: "https://www.globalgourmetmarket.com/cdn/shop/files/PIMIENTA_NEGRA_50G.png?v=1744044209",
         descripcion: "Pimienta negra molida, aroma intenso.",
         stock: true,
         destacado: true
@@ -924,7 +924,7 @@ const productos = [
         nombre: "Cereal de Avena 500g",
         categoria: "Comestibles",
         precio: 8500,
-        imagen: "",
+        imagen: "https://olimpica.vtexassets.com/arquivos/ids/616150/7701008502048.jpg?v=637626522319230000",
         descripcion: "Cereal de avena integral, desayuno saludable.",
         stock: true,
         destacado: true
@@ -934,7 +934,7 @@ const productos = [
         nombre: "Nueces 200g",
         categoria: "Comestibles",
         precio: 12000,
-        imagen: "",
+        imagen: "https://delalba.com.co/cdn/shop/files/Vers25-NUEZBRASIL200g-2492.jpg?v=1710522395",
         descripcion: "Nueces frescas, ricas en omega 3.",
         stock: true,
         destacado: false
@@ -944,7 +944,7 @@ const productos = [
         nombre: "Almendras 200g",
         categoria: "Comestibles",
         precio: 15000,
-        imagen: "",
+        imagen: "https://olimpica.vtexassets.com/arquivos/ids/624054/7707172307939.jpg?v=637626536214900000",
         descripcion: "Almendras tostadas, snack saludable.",
         stock: true,
         destacado: true
@@ -954,7 +954,7 @@ const productos = [
         nombre: "Pasas 200g",
         categoria: "Comestibles",
         precio: 6500,
-        imagen: "",
+        imagen: "https://mercaldas.vtexassets.com/arquivos/ids/1325271/Uvas-pasas-RIOVALLE-grande-x200-g_58438.jpg?v=638495836830530000",
         descripcion: "Pasas de uva, dulces y nutritivas.",
         stock: true,
         destacado: false
@@ -964,7 +964,7 @@ const productos = [
         nombre: "Chocolate Negro 100g",
         categoria: "Comestibles",
         precio: 8500,
-        imagen: "",
+        imagen: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/vlr/vlr43435/l/13.jpg",
         descripcion: "Chocolate negro 70% cacao, antioxidantes.",
         stock: true,
         destacado: true
@@ -974,7 +974,7 @@ const productos = [
         nombre: "Galletas Saladas 200g",
         categoria: "Comestibles",
         precio: 4500,
-        imagen: "",
+        imagen: "https://megatiendas.vtexassets.com/arquivos/ids/171896/7702025188307.jpg?v=638611492555570000",
         descripcion: "Galletas saladas, perfectas para acompañar.",
         stock: true,
         destacado: false
@@ -984,7 +984,7 @@ const productos = [
         nombre: "Palomitas de Maíz 200g",
         categoria: "Comestibles",
         precio: 3500,
-        imagen: "",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9BJ3mqjXd5SP-n0szOyWlxBu6ovNsg0qT3g&s",
         descripcion: "Palomitas de maíz para microondas.",
         stock: true,
         destacado: false
@@ -994,7 +994,7 @@ const productos = [
         nombre: "Gelatina 4 Sobres",
         categoria: "Comestibles",
         precio: 5500,
-        imagen: "",
+        imagen: "https://www.amercarya.com/wp-content/uploads/2025/01/Gelatina-sin-sabor-GELHADA-4-sobres2077258694b04848adbd283a0b5119af.jpg",
         descripcion: "Gelatina de diferentes sabores, 4 sobres.",
         stock: true,
         destacado: true
@@ -1004,18 +1004,8 @@ const productos = [
         nombre: "Helado de Vainilla 1L",
         categoria: "Comestibles",
         precio: 12000,
-        imagen: "",
+        imagen: "https://cdn1.totalcommerce.cloud/cremhelado/product-zoom/es/vaso-1-litro-crem-helado-gold-vainilla-selecta-1.webp",
         descripcion: "Helado de vainilla cremoso, 1 litro.",
-        stock: true,
-        destacado: true
-    },
-    {
-        id: 100,
-        nombre: "Canasta Familiar Completa",
-        categoria: "Canasta Familiar",
-        precio: 120000,
-        imagen: "",
-        descripcion: "Canasta familiar completa con productos esenciales para toda la semana.",
         stock: true,
         destacado: true
     }
