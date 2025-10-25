@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domicilios - La Delicia de Copa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Font Awesome para iconos adicionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .delivery-step {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .delivery-step i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .coverage-area {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+        }
+        .pricing-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-store me-2"></i>La Delicia de Copa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="domicilios.html">Domicilios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Servicio de Domicilios</h1>
+                    <p class="lead mb-4">Recibe tus productos frescos en la comodidad de tu hogar. Servicio rápido, confiable y con la calidad que nos caracteriza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">¿Cómo Funciona Nuestro Servicio?</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="delivery-step">
+                        <i class="fas fa-phone text-primary"></i>
+                        <h5>1. Llama o Escribe</h5>
+                        <p>Contacta con nosotros por teléfono o WhatsApp para hacer tu pedido.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="delivery-step">
+                        <i class="fas fa-list text-success"></i>
+                        <h5>2. Haz tu Pedido</h5>
+                        <p>Indica los productos que necesitas y la dirección de entrega.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="delivery-step">
+                        <i class="fas fa-clock text-warning"></i>
+                        <h5>3. Prepara tu Pedido</h5>
+                        <p>Seleccionamos y empacamos cuidadosamente tus productos frescos.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="delivery-step">
+                        <i class="fas fa-truck text-info"></i>
+                        <h5>4. Entrega Rápida</h5>
+                        <p>Te entregamos tu pedido en el tiempo acordado, fresco y en perfecto estado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifas de Domicilio -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Tarifas de Domicilio</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt text-primary mb-3" style="font-size: 3rem;"></i>
+                            <h5 class="card-title">Zona Cercana</h5>
+                            <p class="text-muted">Hasta 2 km del establecimiento</p>
+                            <h3 class="text-primary">$3.000</h3>
+                            <p class="card-text">Entrega en 30-45 minutos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-car text-success mb-3" style="font-size: 3rem;"></i>
+                            <h5 class="card-title">Zona Media</h5>
+                            <p class="text-muted">De 2 a 5 km del establecimiento</p>
+                            <h3 class="text-success">$5.000</h3>
+                            <p class="card-text">Entrega en 45-60 minutos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-motorcycle text-warning mb-3" style="font-size: 3rem;"></i>
+                            <h5 class="card-title">Zona Lejana</h5>
+                            <p class="text-muted">Más de 5 km del establecimiento</p>
+                            <h3 class="text-warning">$8.000</h3>
+                            <p class="card-text">Entrega en 60-90 minutos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="alert alert-info text-center">
+                        <i class="fas fa-gift me-2"></i>
+                        <strong>¡Envío GRATIS!</strong> En compras superiores a $50.000 (válido solo para zona cercana y media)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zona de Cobertura -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="coverage-area text-center">
+                        <h2 class="mb-4">
+                            <i class="fas fa-map-marked-alt me-2"></i>Zona de Cobertura
+                        </h2>
+                        <p class="lead mb-4">Atendemos las siguientes zonas con nuestro servicio de domicilios:</p>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <h5>Zonas Principales</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check me-2"></i>Centro de la Ciudad</li>
+                                    <li><i class="fas fa-check me-2"></i>Barrio Norte</li>
+                                    <li><i class="fas fa-check me-2"></i>Barrio Sur</li>
+                                    <li><i class="fas fa-check me-2"></i>Zona Industrial</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Zonas Adicionales</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check me-2"></i>Residencial Los Pinos</li>
+                                    <li><i class="fas fa-check me-2"></i>Urbanización El Sol</li>
+                                    <li><i class="fas fa-check me-2"></i>Conjunto Residencial</li>
+                                    <li><i class="fas fa-check me-2"></i>Barrio Popular</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mt-4">
+                            <small>¿No estás seguro si cubrimos tu zona? ¡Contáctanos y te lo confirmamos!</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios de Entrega -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Horarios de Entrega</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-calendar-day text-primary mb-3" style="font-size: 3rem;"></i>
+                            <h5 class="card-title">Días de Semana</h5>
+                            <p class="card-text">Lunes a Viernes</p>
+                            <h4 class="text-primary">7:00 AM - 7:00 PM</h4>
+                            <p class="text-muted">Servicio completo de domicilios</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-calendar-weekend text-success mb-3" style="font-size: 3rem;"></i>
+                            <h5 class="card-title">Fin de Semana</h5>
+                            <p class="card-text">Sábados</p>
+                            <h4 class="text-success">8:00 AM - 6:00 PM</h4>
+                            <p class="text-muted">Servicio de domicilios disponible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="alert alert-warning text-center">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Nota:</strong> Los domingos no realizamos entregas. Los pedidos del domingo se entregarán el lunes siguiente.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información Importante -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Información Importante</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-shield-alt text-primary me-2"></i>Políticas de Entrega
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Productos frescos garantizados</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Empaque cuidadoso y seguro</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Verificación de productos antes de entregar</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Recibo de compra incluido</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-exclamation-triangle text-warning me-2"></i>Requisitos
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-info-circle text-info me-2"></i>Dirección completa y clara</li>
+                                <li><i class="fas fa-info-circle text-info me-2"></i>Número de teléfono de contacto</li>
+                                <li><i class="fas fa-info-circle text-info me-2"></i>Persona responsable para recibir</li>
+                                <li><i class="fas fa-info-circle text-info me-2"></i>Pago al momento de la entrega</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto para Domicilios -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-card text-center">
+                        <h2 class="mb-4">
+                            <i class="fas fa-phone me-2"></i>¡Haz tu Pedido Ahora!
+                        </h2>
+                        <p class="lead mb-4">Contáctanos por cualquiera de estos medios para hacer tu pedido a domicilio:</p>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center justify-content-center mb-3">
+                                    <i class="fas fa-phone me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">Teléfono</h5>
+                                        <p class="mb-0">31047566XX</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center justify-content-center mb-3">
+                                    <i class="fab fa-whatsapp me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">WhatsApp</h5>
+                                        <p class="mb-0">+57 31047566XX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://wa.me/5731047566XX" class="btn btn-light btn-lg me-3" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>Pedir por WhatsApp
+                            </a>
+                            <a href="tel:31047566XX" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-phone me-2"></i>Llamar Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-store me-2"></i>La Delicia de Copa</h5>
+                    <p class="text-light">Tu tienda de confianza para toda la familia. Productos frescos, calidad garantizada y servicio al cliente excepcional.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-map-marker-alt me-2"></i>Información de Contacto</h5>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2"></i>Teléfono: 31047566XX
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2"></i>Email: mmalex16@gmail.com
+                    </p>
+                    <p class="text-light">
+                        <i class="fas fa-map-marker-alt me-2"></i>Dirección: Calle 50 # 43c - 11
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-share-alt me-2"></i>Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="text-light mt-3">
+                        <small>Horarios de atención: 24/7</small>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light mb-0">
+                        <small>&copy; 2024 La Delicia de Copa. Todos los derechos reservados.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5731047566XX" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

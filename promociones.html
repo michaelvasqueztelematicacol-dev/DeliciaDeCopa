@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones y Ofertas - La Delicia de Copa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Font Awesome para iconos adicionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .promo-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .promo-card:hover {
+            transform: translateY(-5px);
+        }
+        .promo-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #dc3545;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .price-original {
+            text-decoration: line-through;
+            color: #6c757d;
+        }
+        .price-sale {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .news-card {
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-store me-2"></i>La Delicia de Copa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="domicilios.html">Domicilios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Promociones y Ofertas</h1>
+                    <p class="lead mb-4">¡Aprovecha nuestras increíbles ofertas y promociones especiales! Ahorra en tus compras favoritas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas Destacadas -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Ofertas Destacadas</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card promo-card h-100 position-relative">
+                        <div class="promo-badge">-25%</div>
+                        <img src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_008371/tienda_008371_6222e462dc431d0edb39fff042e9108b78fbd01d_producto_large_90.jpg" class="card-img-top" alt="Yogurt Griego" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Yogurt Griego 500g</h5>
+                            <p class="card-text">Yogurt griego natural, alto en proteínas. Perfecto para desayunos saludables.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="price-original">$6.500</span>
+                                    <span class="price-sale ms-2">$4.875</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="contactarWhatsApp('Yogurt Griego 500g', 4875)">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card promo-card h-100 position-relative">
+                        <div class="promo-badge">-30%</div>
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.bk4TA6ZdBhVeekQe2bpfGAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Coca Cola" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Coca Cola 2L</h5>
+                            <p class="card-text">Coca Cola refrescante en botella de 2 litros. Ideal para compartir en familia.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="price-original">$8.500</span>
+                                    <span class="price-sale ms-2">$5.950</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="contactarWhatsApp('Coca Cola 2L', 5950)">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card promo-card h-100 position-relative">
+                        <div class="promo-badge">-20%</div>
+                        <img src="https://gastrologi.com/wp-content/uploads/2023/07/39-QUESO-PARMESANO-ALPINA-BLOQUE-X-GR-1.jpg" class="card-img-top" alt="Queso Parmesano" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Queso Parmesano 150g</h5>
+                            <p class="card-text">Queso parmesano rallado, sabor auténtico italiano. Perfecto para pastas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="price-original">$15.000</span>
+                                    <span class="price-sale ms-2">$12.000</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="contactarWhatsApp('Queso Parmesano 150g', 12000)">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card promo-card h-100 position-relative">
+                        <div class="promo-badge">-15%</div>
+                        <img src="https://granitos.hn/market/wp-content/uploads/2020/08/cerveza-corona-pg-web.png" class="card-img-top" alt="Cerveza Corona" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Cerveza Corona 6 Pack</h5>
+                            <p class="card-text">Pack de 6 cervezas Corona, sabor refrescante. Ideal para reuniones.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="price-original">$25.000</span>
+                                    <span class="price-sale ms-2">$21.250</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="contactarWhatsApp('Cerveza Corona 6 Pack', 21250)">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card promo-card h-100 position-relative">
+                        <div class="promo-badge">-35%</div>
+                        <img src="https://realplaza.vtexassets.com/arquivos/ids/33189671/image-3a2d304551d248db92d8487048c42eb3.jpg?v=638223841942600000" class="card-img-top" alt="Queso Fresco" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Queso Fresco 400g</h5>
+                            <p class="card-text">Queso fresco suave, ideal para desayunos. Rico en calcio y proteínas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="price-original">$6.800</span>
+                                    <span class="price-sale ms-2">$4.420</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="contactarWhatsApp('Queso Fresco 400g', 4420)">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card promo-card h-100 position-relative">
+                        <div class="promo-badge">-40%</div>
+                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/167072-1000-1000/Bebida-energizante-RED-BULL-ENERGY-DRINK-Lata-250ml.jpg?v=635762033450100000" class="card-img-top" alt="Red Bull" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Energizante Red Bull 250ml</h5>
+                            <p class="card-text">Bebida energizante Red Bull, energía instantánea. Perfecto para estudiar o trabajar.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="price-original">$8.500</span>
+                                    <span class="price-sale ms-2">$5.100</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="contactarWhatsApp('Energizante Red Bull 250ml', 5100)">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promociones Semanales -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Promociones de la Semana</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-week text-primary me-3" style="font-size: 2rem;"></i>
+                                <div>
+                                    <h5 class="card-title mb-0">Lunes de Verduras</h5>
+                                    <small class="text-muted">Todos los lunes</small>
+                                </div>
+                            </div>
+                            <p class="card-text">20% de descuento en todas las verduras frescas. Perfecto para empezar la semana con una alimentación saludable.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Válido hasta: 31 Dic 2024</span>
+                                <button class="btn btn-outline-primary">Aprovechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-shopping-cart text-success me-3" style="font-size: 2rem;"></i>
+                                <div>
+                                    <h5 class="card-title mb-0">Miércoles de Canasta</h5>
+                                    <small class="text-muted">Todos los miércoles</small>
+                                </div>
+                            </div>
+                            <p class="card-text">Compra tu canasta familiar completa y obtén 15% de descuento adicional. Incluye productos básicos para toda la semana.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Válido hasta: 31 Dic 2024</span>
+                                <button class="btn btn-outline-primary">Aprovechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-birthday-cake text-warning me-3" style="font-size: 2rem;"></i>
+                                <div>
+                                    <h5 class="card-title mb-0">Viernes Dulce</h5>
+                                    <small class="text-muted">Todos los viernes</small>
+                                </div>
+                            </div>
+                            <p class="card-text">30% de descuento en productos de panadería dulce. Tortas, galletas, pasteles y más para endulzar tu fin de semana.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Válido hasta: 31 Dic 2024</span>
+                                <button class="btn btn-outline-primary">Aprovechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-home text-info me-3" style="font-size: 2rem;"></i>
+                                <div>
+                                    <h5 class="card-title mb-0">Sábado Familiar</h5>
+                                    <small class="text-muted">Todos los sábados</small>
+                                </div>
+                            </div>
+                            <p class="card-text">Compra por más de $50.000 y recibe envío gratis a domicilio. Perfecto para hacer las compras de la semana.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Válido hasta: 31 Dic 2024</span>
+                                <button class="btn btn-outline-primary">Aprovechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Novedades -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Novedades</h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card news-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <img src="https://via.placeholder.com/100x100/667eea/ffffff?text=NUEVO" class="rounded me-3" alt="Nuevo Producto">
+                                <div>
+                                    <h5 class="card-title">¡Nuevos Productos Orgánicos!</h5>
+                                    <p class="card-text">Hemos ampliado nuestra sección de productos orgánicos. Ahora puedes encontrar una gran variedad de frutas y verduras cultivadas sin pesticidas, perfectas para una alimentación más saludable.</p>
+                                    <small class="text-muted">Publicado: 15 de Diciembre, 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-bell text-warning me-2"></i>Notificaciones
+                            </h5>
+                            <p class="card-text">Recibe notificaciones sobre nuevas ofertas y promociones directamente en tu WhatsApp.</p>
+                            <button class="btn btn-success w-100">
+                                <i class="fab fa-whatsapp me-2"></i>Suscribirse
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Aprovechar las Ofertas -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">¿Cómo Aprovechar Nuestras Ofertas?</h2>
+            <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-search text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5>1. Explora</h5>
+                    <p class="text-muted">Revisa nuestras ofertas disponibles en esta página.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-shopping-cart text-success" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5>2. Selecciona</h5>
+                    <p class="text-muted">Elige los productos que más te interesen.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-phone text-warning" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5>3. Contacta</h5>
+                    <p class="text-muted">Llama o escribe por WhatsApp para hacer tu pedido.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-truck text-info" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5>4. Recibe</h5>
+                    <p class="text-muted">Disfruta tus productos frescos en casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-store me-2"></i>La Delicia de Copa</h5>
+                    <p class="text-light">Tu tienda de confianza para toda la familia. Productos frescos, calidad garantizada y servicio al cliente excepcional.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-map-marker-alt me-2"></i>Información de Contacto</h5>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2"></i>Teléfono: 31047566XX
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2"></i>Email: mmalex16@gmail.com
+                    </p>
+                    <p class="text-light">
+                        <i class="fas fa-map-marker-alt me-2"></i>Dirección: Calle 50 # 43c - 11
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-share-alt me-2"></i>Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="text-light mt-3">
+                        <small>Horarios de atención: 24/7</small>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light mb-0">
+                        <small>&copy; 2024 La Delicia de Copa. Todos los derechos reservados.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5731047566XX" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para funciones de promociones -->
+    <script>
+        // Función para formatear precios
+        function formatearPrecio(precio) {
+            return new Intl.NumberFormat('es-CO', {
+                style: 'currency',
+                currency: 'COP',
+                minimumFractionDigits: 0
+            }).format(precio);
+        }
+        
+        // Función para contactar por WhatsApp con producto en promoción
+        function contactarWhatsApp(nombreProducto, precioPromocion) {
+            const mensaje = `¡Hola! Me interesa la promoción de: ${nombreProducto} - Precio promocional: ${formatearPrecio(precioPromocion)}. ¿Está disponible?`;
+            const urlWhatsApp = `https://wa.me/5731047566XX?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
+</body>
+</html>
