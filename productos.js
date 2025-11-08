@@ -832,7 +832,8 @@ const productos = [
         nombre: "Mantequilla de Maní 500g",
         categoria: "Comestibles",
         precio: 8500,
-        imagen: "https://allfitness.cl/wp-content/uploads/2021/05/MANTEQUILLA-DE-MANI-500-300x300.png",
+        imagen: "https://allfitness.cl/wp-content/uploads/2021/05/MANTEQUILLA-DE-MANI-500-300x300.png
+        ",
         descripcion: "Mantequilla de maní natural, sin azúcar.",
         stock: true,
         destacado: false
@@ -1083,7 +1084,7 @@ function agregarAlCarrito(productoId) {
         
         // Simular llamada a WhatsApp
         const mensaje = `Hola, me interesa comprar: ${producto.nombre} - ${formatearPrecio(producto.precio)}`;
-        const urlWhatsApp = `https://wa.me/5731047566XX?text=${encodeURIComponent(mensaje)}`;
+        const urlWhatsApp = `https://wa.me/573113480761?text=${encodeURIComponent(mensaje)}`;
         window.open(urlWhatsApp, '_blank');
     }
 }

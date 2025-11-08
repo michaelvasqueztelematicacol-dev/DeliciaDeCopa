@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PQRS - La Delicia de Copa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Font Awesome para iconos adicionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pqrs-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 10px 10px 0 0;
+        }
+        .pqrs-tab:hover {
+            transform: translateY(-2px);
+        }
+        .pqrs-tab.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .pqrs-form-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+        .pqrs-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .info-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 4px solid #667eea;
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+        .time-badge {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-store me-2"></i>La Delicia de Copa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="domicilios.html">Domicilios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pqrs.html">PQRS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">PQRS</h1>
+                    <p class="lead mb-4">Peticiones, Quejas, Reclamos, Sugerencias y Felicitaciones. Tu opinión es importante para nosotros. Estamos aquí para escucharte y mejorar nuestro servicio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información sobre PQRS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="info-card text-center h-100">
+                        <i class="fas fa-clock pqrs-icon text-primary"></i>
+                        <h5>Tiempos de Respuesta</h5>
+                        <p class="mb-2"><span class="time-badge">Peticiones: 5 días</span></p>
+                        <p class="mb-2"><span class="time-badge">Quejas: 3 días</span></p>
+                        <p class="mb-2"><span class="time-badge">Reclamos: 2 días</span></p>
+                        <p class="mb-0"><span class="time-badge">Sugerencias: 7 días</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card text-center h-100">
+                        <i class="fas fa-shield-alt pqrs-icon text-success"></i>
+                        <h5>Confidencialidad</h5>
+                        <p>Toda la información que nos proporciones será tratada con absoluta confidencialidad y será utilizada únicamente para mejorar nuestros servicios.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card text-center h-100">
+                        <i class="fas fa-headset pqrs-icon text-warning"></i>
+                        <h5>Atención Personalizada</h5>
+                        <p>Nos comprometemos a dar respuesta oportuna a todas tus solicitudes. Tu satisfacción es nuestra prioridad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario PQRS -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Envíanos tu PQRS</h2>
+            
+            <!-- Tabs para tipos de PQRS -->
+            <ul class="nav nav-pills nav-justified mb-4" id="pqrsTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pqrs-tab active" id="peticion-tab" data-bs-toggle="tab" data-bs-target="#peticion" type="button" role="tab">
+                        <i class="fas fa-hand-paper me-2"></i>Petición
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pqrs-tab" id="queja-tab" data-bs-toggle="tab" data-bs-target="#queja" type="button" role="tab">
+                        <i class="fas fa-exclamation-triangle me-2"></i>Queja
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pqrs-tab" id="reclamo-tab" data-bs-toggle="tab" data-bs-target="#reclamo" type="button" role="tab">
+                        <i class="fas fa-comment-alt me-2"></i>Reclamo
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pqrs-tab" id="sugerencia-tab" data-bs-toggle="tab" data-bs-target="#sugerencia" type="button" role="tab">
+                        <i class="fas fa-lightbulb me-2"></i>Sugerencia
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pqrs-tab" id="felicitacion-tab" data-bs-toggle="tab" data-bs-target="#felicitacion" type="button" role="tab">
+                        <i class="fas fa-heart me-2"></i>Felicitación
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Contenido de los Tabs -->
+            <div class="tab-content" id="pqrsTabContent">
+                <!-- Petición -->
+                <div class="tab-pane fade show active" id="peticion" role="tabpanel">
+                    <div class="card pqrs-form-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-hand-paper pqrs-icon text-primary"></i>
+                                <h3>Petición</h3>
+                                <p class="text-muted">Solicita información, productos o servicios adicionales que te gustaría que ofrezcamos.</p>
+                            </div>
+                            <form id="peticionForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="peticionNombre" class="form-label">Nombre Completo *</label>
+                                        <input type="text" class="form-control" id="peticionNombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="peticionTelefono" class="form-label">Teléfono *</label>
+                                        <input type="tel" class="form-control" id="peticionTelefono" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="peticionEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="peticionEmail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="peticionAsunto" class="form-label">Asunto *</label>
+                                        <input type="text" class="form-control" id="peticionAsunto" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="peticionMensaje" class="form-label">Mensaje *</label>
+                                        <textarea class="form-control" id="peticionMensaje" rows="5" required placeholder="Describe tu petición de manera detallada..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                                            <i class="fab fa-whatsapp me-2"></i>Enviar Petición por WhatsApp
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Queja -->
+                <div class="tab-pane fade" id="queja" role="tabpanel">
+                    <div class="card pqrs-form-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-exclamation-triangle pqrs-icon text-warning"></i>
+                                <h3>Queja</h3>
+                                <p class="text-muted">Expresa tu insatisfacción con algún aspecto de nuestro servicio. Nos comprometemos a revisar y mejorar.</p>
+                            </div>
+                            <form id="quejaForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="quejaNombre" class="form-label">Nombre Completo *</label>
+                                        <input type="text" class="form-control" id="quejaNombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="quejaTelefono" class="form-label">Teléfono *</label>
+                                        <input type="tel" class="form-control" id="quejaTelefono" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="quejaEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="quejaEmail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="quejaFecha" class="form-label">Fecha del incidente *</label>
+                                        <input type="date" class="form-control" id="quejaFecha" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="quejaAsunto" class="form-label">Asunto *</label>
+                                        <input type="text" class="form-control" id="quejaAsunto" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="quejaMensaje" class="form-label">Descripción de la Queja *</label>
+                                        <textarea class="form-control" id="quejaMensaje" rows="5" required placeholder="Describe detalladamente qué sucedió y por qué estás insatisfecho..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-warning btn-lg w-100">
+                                            <i class="fab fa-whatsapp me-2"></i>Enviar Queja por WhatsApp
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reclamo -->
+                <div class="tab-pane fade" id="reclamo" role="tabpanel">
+                    <div class="card pqrs-form-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-comment-alt pqrs-icon text-danger"></i>
+                                <h3>Reclamo</h3>
+                                <p class="text-muted">Si consideras que tus derechos como cliente fueron vulnerados, presenta tu reclamo. Lo revisaremos con prioridad.</p>
+                            </div>
+                            <form id="reclamoForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="reclamoNombre" class="form-label">Nombre Completo *</label>
+                                        <input type="text" class="form-control" id="reclamoNombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="reclamoTelefono" class="form-label">Teléfono *</label>
+                                        <input type="tel" class="form-control" id="reclamoTelefono" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="reclamoEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="reclamoEmail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="reclamoFecha" class="form-label">Fecha del incidente *</label>
+                                        <input type="date" class="form-control" id="reclamoFecha" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="reclamoAsunto" class="form-label">Asunto *</label>
+                                        <input type="text" class="form-control" id="reclamoAsunto" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="reclamoMensaje" class="form-label">Descripción del Reclamo *</label>
+                                        <textarea class="form-control" id="reclamoMensaje" rows="5" required placeholder="Describe detalladamente el problema y qué solución esperas..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-danger btn-lg w-100">
+                                            <i class="fab fa-whatsapp me-2"></i>Enviar Reclamo por WhatsApp
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sugerencia -->
+                <div class="tab-pane fade" id="sugerencia" role="tabpanel">
+                    <div class="card pqrs-form-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-lightbulb pqrs-icon text-info"></i>
+                                <h3>Sugerencia</h3>
+                                <p class="text-muted">Comparte tus ideas para mejorar nuestros productos, servicios o atención. Tu opinión nos ayuda a crecer.</p>
+                            </div>
+                            <form id="sugerenciaForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="sugerenciaNombre" class="form-label">Nombre Completo *</label>
+                                        <input type="text" class="form-control" id="sugerenciaNombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="sugerenciaTelefono" class="form-label">Teléfono *</label>
+                                        <input type="tel" class="form-control" id="sugerenciaTelefono" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="sugerenciaEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="sugerenciaEmail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="sugerenciaAsunto" class="form-label">Asunto *</label>
+                                        <input type="text" class="form-control" id="sugerenciaAsunto" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="sugerenciaMensaje" class="form-label">Tu Sugerencia *</label>
+                                        <textarea class="form-control" id="sugerenciaMensaje" rows="5" required placeholder="Comparte tus ideas y sugerencias para mejorar nuestro servicio..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-info btn-lg w-100">
+                                            <i class="fab fa-whatsapp me-2"></i>Enviar Sugerencia por WhatsApp
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Felicitación -->
+                <div class="tab-pane fade" id="felicitacion" role="tabpanel">
+                    <div class="card pqrs-form-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-heart pqrs-icon text-danger"></i>
+                                <h3>Felicitación</h3>
+                                <p class="text-muted">Si tuviste una excelente experiencia con nosotros, compártela. Nos encanta saber que estamos haciendo bien las cosas.</p>
+                            </div>
+                            <form id="felicitacionForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="felicitacionNombre" class="form-label">Nombre Completo *</label>
+                                        <input type="text" class="form-control" id="felicitacionNombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="felicitacionTelefono" class="form-label">Teléfono *</label>
+                                        <input type="tel" class="form-control" id="felicitacionTelefono" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="felicitacionEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="felicitacionEmail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="felicitacionAsunto" class="form-label">Asunto *</label>
+                                        <input type="text" class="form-control" id="felicitacionAsunto" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="felicitacionMensaje" class="form-label">Tu Felicitación *</label>
+                                        <textarea class="form-control" id="felicitacionMensaje" rows="5" required placeholder="Cuéntanos qué te gustó de nuestro servicio..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-success btn-lg w-100">
+                                            <i class="fab fa-whatsapp me-2"></i>Enviar Felicitación por WhatsApp
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información Adicional -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Información Importante</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-info-circle text-primary me-2"></i>¿Qué información necesitamos?
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Nombre completo</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Número de teléfono</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Email (opcional)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Descripción detallada del caso</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Fecha del incidente (si aplica)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-shield-alt text-success me-2"></i>Compromiso con tu Privacidad
+                            </h5>
+                            <p class="card-text">Toda la información proporcionada será tratada con absoluta confidencialidad. Nos comprometemos a:</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-lock text-primary me-2"></i>Proteger tus datos personales</li>
+                                <li><i class="fas fa-lock text-primary me-2"></i>Usar la información solo para resolver tu PQRS</li>
+                                <li><i class="fas fa-lock text-primary me-2"></i>No compartir tu información con terceros</li>
+                                <li><i class="fas fa-lock text-primary me-2"></i>Responder de manera oportuna y profesional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-store me-2"></i>La Delicia de Copa</h5>
+                    <p class="text-light">Tu tienda de confianza para toda la familia. Productos frescos, calidad garantizada y servicio al cliente excepcional.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-map-marker-alt me-2"></i>Información de Contacto</h5>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2"></i>Teléfono: 31047566XX
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2"></i>Email: mmalex16@gmail.com
+                    </p>
+                    <p class="text-light">
+                        <i class="fas fa-map-marker-alt me-2"></i>Dirección: Calle 50 # 43c - 11
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-share-alt me-2"></i>Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="text-light mt-3">
+                        <small>Horarios de atención: 24/7</small>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light mb-0">
+                        <small>&copy; 2024 La Delicia de Copa. Todos los derechos reservados.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/573113480761" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para PQRS -->
+    <script>
+        const tiposPQRS = {
+            peticion: {
+                nombre: 'Petición',
+                icono: 'hand-paper',
+                color: 'primary'
+            },
+            queja: {
+                nombre: 'Queja',
+                icono: 'exclamation-triangle',
+                color: 'warning'
+            },
+            reclamo: {
+                nombre: 'Reclamo',
+                icono: 'comment-alt',
+                color: 'danger'
+            },
+            sugerencia: {
+                nombre: 'Sugerencia',
+                icono: 'lightbulb',
+                color: 'info'
+            },
+            felicitacion: {
+                nombre: 'Felicitación',
+                icono: 'heart',
+                color: 'success'
+            }
+        };
+
+        function enviarPQRS(tipo, formData) {
+            const tipoInfo = tiposPQRS[tipo];
+            const fecha = new Date().toLocaleDateString('es-CO');
+            const hora = new Date().toLocaleTimeString('es-CO');
+            
+            let mensaje = `*${tipoInfo.nombre.toUpperCase()} - La Delicia de Copa*\n\n`;
+            mensaje += `📅 Fecha: ${fecha} ${hora}\n\n`;
+            mensaje += `👤 *Nombre:* ${formData.nombre}\n`;
+            mensaje += `📞 *Teléfono:* ${formData.telefono}\n`;
+            if (formData.email) {
+                mensaje += `📧 *Email:* ${formData.email}\n`;
+            }
+            if (formData.fecha) {
+                mensaje += `📆 *Fecha del incidente:* ${formData.fecha}\n`;
+            }
+            mensaje += `\n📋 *Asunto:* ${formData.asunto}\n\n`;
+            mensaje += `💬 *Mensaje:*\n${formData.mensaje}\n\n`;
+            mensaje += `_Gracias por contactarnos. Revisaremos tu ${tipoInfo.nombre.toLowerCase()} y te responderemos pronto._`;
+
+            const urlWhatsApp = `https://wa.me/573113480761?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+
+        // Manejar envío de formularios
+        document.getElementById('peticionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                nombre: document.getElementById('peticionNombre').value,
+                telefono: document.getElementById('peticionTelefono').value,
+                email: document.getElementById('peticionEmail').value,
+                asunto: document.getElementById('peticionAsunto').value,
+                mensaje: document.getElementById('peticionMensaje').value
+            };
+            enviarPQRS('peticion', formData);
+            this.reset();
+        });
+
+        document.getElementById('quejaForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                nombre: document.getElementById('quejaNombre').value,
+                telefono: document.getElementById('quejaTelefono').value,
+                email: document.getElementById('quejaEmail').value,
+                fecha: document.getElementById('quejaFecha').value,
+                asunto: document.getElementById('quejaAsunto').value,
+                mensaje: document.getElementById('quejaMensaje').value
+            };
+            enviarPQRS('queja', formData);
+            this.reset();
+        });
+
+        document.getElementById('reclamoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                nombre: document.getElementById('reclamoNombre').value,
+                telefono: document.getElementById('reclamoTelefono').value,
+                email: document.getElementById('reclamoEmail').value,
+                fecha: document.getElementById('reclamoFecha').value,
+                asunto: document.getElementById('reclamoAsunto').value,
+                mensaje: document.getElementById('reclamoMensaje').value
+            };
+            enviarPQRS('reclamo', formData);
+            this.reset();
+        });
+
+        document.getElementById('sugerenciaForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                nombre: document.getElementById('sugerenciaNombre').value,
+                telefono: document.getElementById('sugerenciaTelefono').value,
+                email: document.getElementById('sugerenciaEmail').value,
+                asunto: document.getElementById('sugerenciaAsunto').value,
+                mensaje: document.getElementById('sugerenciaMensaje').value
+            };
+            enviarPQRS('sugerencia', formData);
+            this.reset();
+        });
+
+        document.getElementById('felicitacionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                nombre: document.getElementById('felicitacionNombre').value,
+                telefono: document.getElementById('felicitacionTelefono').value,
+                email: document.getElementById('felicitacionEmail').value,
+                asunto: document.getElementById('felicitacionAsunto').value,
+                mensaje: document.getElementById('felicitacionMensaje').value
+            };
+            enviarPQRS('felicitacion', formData);
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+

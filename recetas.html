@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas - La Delicia de Copa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Font Awesome para iconos adicionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .recipe-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            height: 100%;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+        .recipe-image {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .ingredient-badge {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin: 3px;
+            display: inline-block;
+        }
+        .tip-card {
+            border-left: 4px solid #28a745;
+            background-color: #f8f9fa;
+        }
+        .recipe-time {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-store me-2"></i>La Delicia de Copa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="domicilios.html">Domicilios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pqrs.html">PQRS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Recetas Deliciosas</h1>
+                    <p class="lead mb-4">Descubre recetas increíbles que puedes preparar con los productos que encuentras en nuestra tienda. Cocina fácil, rico y nutritivo para toda la familia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recetas -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestras Recetas</h2>
+            <div class="row g-4">
+                <!-- Receta 1: Pasta con Queso Parmesano y Pollo -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800" class="card-img-top recipe-image" alt="Pasta con Queso Parmesano y Pollo">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Pasta con Queso Parmesano y Pollo</h5>
+                            <p class="recipe-time mb-3">
+                                <i class="fas fa-clock me-2"></i>30 minutos | 
+                                <i class="fas fa-users me-2"></i>4 porciones
+                            </p>
+                            <p class="card-text">Una deliciosa pasta italiana con pollo tierno y queso parmesano. Perfecta para una cena especial.</p>
+                            <div class="mb-3">
+                                <strong>Ingredientes:</strong>
+                                <div class="mt-2">
+                                    <span class="ingredient-badge">Pasta Espagueti 500g</span>
+                                    <span class="ingredient-badge">Pechuga de Pollo 1kg</span>
+                                    <span class="ingredient-badge">Queso Parmesano 150g</span>
+                                    <span class="ingredient-badge">Aceite de Cocina 900ml</span>
+                                    <span class="ingredient-badge">Sal de Mesa 500g</span>
+                                    <span class="ingredient-badge">Pimienta Negra 50g</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary w-100" onclick="verRecetaCompleta(1)">Ver Receta Completa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 2: Ensalada César con Pollo -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800" class="card-img-top recipe-image" alt="Ensalada César con Pollo">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ensalada César con Pollo</h5>
+                            <p class="recipe-time mb-3">
+                                <i class="fas fa-clock me-2"></i>20 minutos | 
+                                <i class="fas fa-users me-2"></i>4 porciones
+                            </p>
+                            <p class="card-text">Ensalada fresca y nutritiva con pollo a la parrilla, lechuga crujiente y aderezo césar casero.</p>
+                            <div class="mb-3">
+                                <strong>Ingredientes:</strong>
+                                <div class="mt-2">
+                                    <span class="ingredient-badge">Lechuga 1 Unidad</span>
+                                    <span class="ingredient-badge">Pechuga de Pollo 1kg</span>
+                                    <span class="ingredient-badge">Queso Parmesano 150g</span>
+                                    <span class="ingredient-badge">Mayonesa 500g</span>
+                                    <span class="ingredient-badge">Limón 1kg</span>
+                                    <span class="ingredient-badge">Aceite de Cocina 900ml</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary w-100" onclick="verRecetaCompleta(2)">Ver Receta Completa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 3: Arroz con Pollo -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800" class="card-img-top recipe-image" alt="Arroz con Pollo">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Arroz con Pollo</h5>
+                            <p class="recipe-time mb-3">
+                                <i class="fas fa-clock me-2"></i>45 minutos | 
+                                <i class="fas fa-users me-2"></i>6 porciones
+                            </p>
+                            <p class="card-text">Un plato tradicional y completo con pollo, arroz y verduras. Ideal para el almuerzo familiar.</p>
+                            <div class="mb-3">
+                                <strong>Ingredientes:</strong>
+                                <div class="mt-2">
+                                    <span class="ingredient-badge">Arroz Blanco 1kg</span>
+                                    <span class="ingredient-badge">Pollo Entero 1.5kg</span>
+                                    <span class="ingredient-badge">Cebolla 1kg</span>
+                                    <span class="ingredient-badge">Tomate 1kg</span>
+                                    <span class="ingredient-badge">Papa 2kg</span>
+                                    <span class="ingredient-badge">Zanahoria 1kg</span>
+                                    <span class="ingredient-badge">Aceite de Cocina 900ml</span>
+                                    <span class="ingredient-badge">Sal de Mesa 500g</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary w-100" onclick="verRecetaCompleta(3)">Ver Receta Completa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 4: Sándwich de Jamón y Queso -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=800" class="card-img-top recipe-image" alt="Sándwich de Jamón y Queso">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Sándwich de Jamón y Queso</h5>
+                            <p class="recipe-time mb-3">
+                                <i class="fas fa-clock me-2"></i>10 minutos | 
+                                <i class="fas fa-users me-2"></i>2 porciones
+                            </p>
+                            <p class="card-text">Un sándwich clásico y delicioso, perfecto para el desayuno o una merienda rápida.</p>
+                            <div class="mb-3">
+                                <strong>Ingredientes:</strong>
+                                <div class="mt-2">
+                                    <span class="ingredient-badge">Pan Blanco 1 Unidad</span>
+                                    <span class="ingredient-badge">Jamón Cocido 300g</span>
+                                    <span class="ingredient-badge">Queso Mozzarella 250g</span>
+                                    <span class="ingredient-badge">Mantequilla 200g</span>
+                                    <span class="ingredient-badge">Lechuga 1 Unidad</span>
+                                    <span class="ingredient-badge">Tomate 1kg</span>
+                                    <span class="ingredient-badge">Mayonesa 500g</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary w-100" onclick="verRecetaCompleta(4)">Ver Receta Completa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 5: Tortilla de Huevos con Queso -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1633613286991-611fe298c07a?w=800" class="card-img-top recipe-image" alt="Tortilla de Huevos con Queso">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Tortilla de Huevos con Queso</h5>
+                            <p class="recipe-time mb-3">
+                                <i class="fas fa-clock me-2"></i>15 minutos | 
+                                <i class="fas fa-users me-2"></i>3 porciones
+                            </p>
+                            <p class="card-text">Una tortilla esponjosa y deliciosa con queso derretido. Perfecta para el desayuno.</p>
+                            <div class="mb-3">
+                                <strong>Ingredientes:</strong>
+                                <div class="mt-2">
+                                    <span class="ingredient-badge">Huevos 30 Unidades</span>
+                                    <span class="ingredient-badge">Queso Cheddar 300g</span>
+                                    <span class="ingredient-badge">Mantequilla 200g</span>
+                                    <span class="ingredient-badge">Sal de Mesa 500g</span>
+                                    <span class="ingredient-badge">Pimienta Negra 50g</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary w-100" onclick="verRecetaCompleta(5)">Ver Receta Completa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 6: Postre de Gelatina con Leche Condensada -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card recipe-card h-100">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800" class="card-img-top recipe-image" alt="Postre de Gelatina con Leche Condensada">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Postre de Gelatina con Leche Condensada</h5>
+                            <p class="recipe-time mb-3">
+                                <i class="fas fa-clock me-2"></i>30 min + 4h refrigeración | 
+                                <i class="fas fa-users me-2"></i>8 porciones
+                            </p>
+                            <p class="card-text">Un postre refrescante y dulce, perfecto para compartir en familia. Fácil de preparar.</p>
+                            <div class="mb-3">
+                                <strong>Ingredientes:</strong>
+                                <div class="mt-2">
+                                    <span class="ingredient-badge">Gelatina 4 Sobres</span>
+                                    <span class="ingredient-badge">Leche Condensada 400g</span>
+                                    <span class="ingredient-badge">Crema de Leche 200ml</span>
+                                    <span class="ingredient-badge">Agua Natural 600ml</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary w-100" onclick="verRecetaCompleta(6)">Ver Receta Completa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consejos de Conservación -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Consejos de Conservación de Alimentos</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-snowflake text-primary me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Temperatura del Refrigerador</h5>
+                            </div>
+                            <p class="card-text">Mantén tu refrigerador entre 1°C y 4°C. Los productos lácteos, carnes y pescados deben estar siempre refrigerados. No dejes la puerta abierta por mucho tiempo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-box text-success me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Almacenamiento en Recipientes</h5>
+                            </div>
+                            <p class="card-text">Usa recipientes herméticos para guardar alimentos. Esto previene la contaminación y mantiene la frescura. Etiqueta los recipientes con la fecha de almacenamiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-seedling text-warning me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Frutas y Verduras</h5>
+                            </div>
+                            <p class="card-text">Lava las frutas y verduras antes de guardarlas. Algunas como las papas y cebollas se conservan mejor en lugares frescos y oscuros. Las verduras de hoja verde duran más en el refrigerador con un paño húmedo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-drumstick-bite text-danger me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Carnes y Pescados</h5>
+                            </div>
+                            <p class="card-text">Las carnes crudas deben consumirse en máximo 2 días si están refrigeradas. Si no las vas a usar pronto, congélalas. Descongela en el refrigerador, nunca a temperatura ambiente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-cookie-bite text-info me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Productos Secos</h5>
+                            </div>
+                            <p class="card-text">Arroz, pasta, harina y azúcar deben guardarse en recipientes herméticos en lugares frescos y secos. Evita la humedad y la luz directa. Revisa periódicamente la fecha de vencimiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-wine-bottle text-secondary me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Lácteos</h5>
+                            </div>
+                            <p class="card-text">La leche y los yogures deben estar siempre refrigerados. El queso se conserva mejor envuelto en papel de aluminio o en recipientes herméticos. Revisa las fechas de vencimiento regularmente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-egg text-warning me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Huevos</h5>
+                            </div>
+                            <p class="card-text">Los huevos se conservan mejor en el refrigerador en su empaque original. No los laves hasta que vayas a usarlos. Pueden durar hasta 3-5 semanas si se almacenan correctamente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-bread-slice text-primary me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Pan y Productos de Panadería</h5>
+                            </div>
+                            <p class="card-text">El pan fresco se conserva mejor a temperatura ambiente en una bolsa de papel o tela. Para mayor duración, congélalo en porciones. Los productos de panadería dulce duran más en el refrigerador.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-exclamation-triangle text-danger me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Regla de las 2 Horas</h5>
+                            </div>
+                            <p class="card-text">Los alimentos cocinados no deben permanecer a temperatura ambiente por más de 2 horas. Refrigéralos o congélalos rápidamente. Calienta completamente antes de consumir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-store me-2"></i>La Delicia de Copa</h5>
+                    <p class="text-light">Tu tienda de confianza para toda la familia. Productos frescos, calidad garantizada y servicio al cliente excepcional.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-map-marker-alt me-2"></i>Información de Contacto</h5>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2"></i>Teléfono: 31047566XX
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2"></i>Email: mmalex16@gmail.com
+                    </p>
+                    <p class="text-light">
+                        <i class="fas fa-map-marker-alt me-2"></i>Dirección: Calle 50 # 43c - 11
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-share-alt me-2"></i>Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light" style="font-size: 1.5rem;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="text-light mt-3">
+                        <small>Horarios de atención: 24/7</small>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light mb-0">
+                        <small>&copy; 2024 La Delicia de Copa. Todos los derechos reservados.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/573113480761" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal para Receta Completa -->
+    <div class="modal fade" id="recetaModal" tabindex="-1" aria-labelledby="recetaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recetaModalLabel">Receta Completa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="recetaModalBody">
+                    <!-- Contenido de la receta se cargará aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" onclick="comprarIngredientes()">
+                        <i class="fab fa-whatsapp me-2"></i>Comprar Ingredientes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para recetas -->
+    <script>
+        const recetas = {
+            1: {
+                titulo: "Pasta con Queso Parmesano y Pollo",
+                ingredientes: [
+                    "500g de Pasta Espagueti",
+                    "1kg de Pechuga de Pollo",
+                    "150g de Queso Parmesano",
+                    "3 cucharadas de Aceite de Cocina",
+                    "Sal y Pimienta al gusto"
+                ],
+                preparacion: [
+                    "Cocina la pasta según las instrucciones del paquete hasta que esté al dente.",
+                    "Corta la pechuga de pollo en cubos pequeños y sazona con sal y pimienta.",
+                    "Calienta el aceite en una sartén grande y cocina el pollo hasta que esté dorado y cocido.",
+                    "Escurre la pasta y agrégala a la sartén con el pollo.",
+                    "Ralla el queso parmesano y espolvoréalo sobre la pasta.",
+                    "Mezcla todo suavemente y sirve caliente."
+                ]
+            },
+            2: {
+                titulo: "Ensalada César con Pollo",
+                ingredientes: [
+                    "1 Lechuga fresca",
+                    "1kg de Pechuga de Pollo",
+                    "150g de Queso Parmesano",
+                    "4 cucharadas de Mayonesa",
+                    "2 cucharadas de jugo de Limón",
+                    "2 cucharadas de Aceite de Cocina",
+                    "Sal y Pimienta al gusto"
+                ],
+                preparacion: [
+                    "Cocina la pechuga de pollo a la parrilla o en sartén hasta que esté dorada y cocida.",
+                    "Lava y corta la lechuga en trozos grandes.",
+                    "Prepara el aderezo mezclando mayonesa, jugo de limón, aceite, sal y pimienta.",
+                    "Corta el pollo en tiras o cubos.",
+                    "En un bowl grande, mezcla la lechuga con el aderezo.",
+                    "Agrega el pollo y el queso parmesano rallado. Mezcla suavemente y sirve."
+                ]
+            },
+            3: {
+                titulo: "Arroz con Pollo",
+                ingredientes: [
+                    "2 tazas de Arroz Blanco",
+                    "1.5kg de Pollo Entero",
+                    "1 Cebolla grande",
+                    "2 Tomates",
+                    "2 Papas medianas",
+                    "2 Zanahorias",
+                    "3 cucharadas de Aceite de Cocina",
+                    "Sal al gusto",
+                    "Agua"
+                ],
+                preparacion: [
+                    "Lava y corta el pollo en presas. Sazona con sal.",
+                    "Pica la cebolla y los tomates en cubos pequeños.",
+                    "En una olla grande, calienta el aceite y sofríe la cebolla hasta que esté transparente.",
+                    "Agrega el pollo y cocina hasta que esté dorado por todos los lados.",
+                    "Agrega los tomates, papas y zanahorias cortadas en cubos.",
+                    "Agrega el arroz lavado y cubre con agua (aproximadamente 4 tazas).",
+                    "Cocina a fuego medio-bajo hasta que el arroz esté cocido y el pollo tierno.",
+                    "Ajusta la sal y sirve caliente."
+                ]
+            },
+            4: {
+                titulo: "Sándwich de Jamón y Queso",
+                ingredientes: [
+                    "4 rebanadas de Pan Blanco",
+                    "200g de Jamón Cocido",
+                    "150g de Queso Mozzarella",
+                    "2 cucharadas de Mantequilla",
+                    "Hojas de Lechuga",
+                    "2 rodajas de Tomate",
+                    "Mayonesa al gusto"
+                ],
+                preparacion: [
+                    "Unta mantequilla en una cara de cada rebanada de pan.",
+                    "En una sartén, tuesta ligeramente las rebanadas de pan con la mantequilla hacia abajo.",
+                    "En el pan tostado, unta mayonesa al gusto.",
+                    "Coloca hojas de lechuga, luego el jamón y el queso.",
+                    "Agrega las rodajas de tomate.",
+                    "Cierra el sándwich con la otra rebanada de pan.",
+                    "Corta por la mitad y sirve inmediatamente."
+                ]
+            },
+            5: {
+                titulo: "Tortilla de Huevos con Queso",
+                ingredientes: [
+                    "6 Huevos",
+                    "100g de Queso Cheddar rallado",
+                    "2 cucharadas de Mantequilla",
+                    "Sal y Pimienta al gusto"
+                ],
+                preparacion: [
+                    "Rompe los huevos en un bowl y bátelos ligeramente con sal y pimienta.",
+                    "Agrega el queso cheddar rallado a los huevos batidos.",
+                    "Calienta la mantequilla en una sartén antiadherente a fuego medio.",
+                    "Vierte la mezcla de huevos en la sartén.",
+                    "Cocina sin revolver hasta que los bordes estén firmes.",
+                    "Con una espátula, levanta los bordes y deja que el huevo crudo fluya hacia abajo.",
+                    "Cuando esté casi cocido, voltea la tortilla con cuidado.",
+                    "Cocina por 1 minuto más y sirve caliente."
+                ]
+            },
+            6: {
+                titulo: "Postre de Gelatina con Leche Condensada",
+                ingredientes: [
+                    "2 sobres de Gelatina (sabor a elección)",
+                    "1 lata de Leche Condensada 400g",
+                    "200ml de Crema de Leche",
+                    "500ml de Agua caliente",
+                    "200ml de Agua fría"
+                ],
+                preparacion: [
+                    "Disuelve la gelatina en el agua caliente según las instrucciones del paquete.",
+                    "Agrega el agua fría y mezcla bien.",
+                    "Vierte la mitad de la gelatina en un molde y refrigera hasta que esté firme (aproximadamente 2 horas).",
+                    "Mientras tanto, mezcla la leche condensada con la crema de leche hasta obtener una mezcla homogénea.",
+                    "Cuando la primera capa de gelatina esté firme, vierte la mezcla de leche condensada sobre ella.",
+                    "Refrigera por 1 hora más.",
+                    "Vierte la otra mitad de la gelatina sobre la capa de leche condensada.",
+                    "Refrigera por al menos 4 horas o toda la noche antes de servir."
+                ]
+            }
+        };
+
+        function verRecetaCompleta(numeroReceta) {
+            const receta = recetas[numeroReceta];
+            if (!receta) return;
+
+            const modalBody = document.getElementById('recetaModalBody');
+            modalBody.innerHTML = `
+                <h4 class="mb-4">${receta.titulo}</h4>
+                <div class="mb-4">
+                    <h5><i class="fas fa-list-ul me-2"></i>Ingredientes:</h5>
+                    <ul class="list-group list-group-flush">
+                        ${receta.ingredientes.map(ing => `<li class="list-group-item">${ing}</li>`).join('')}
+                    </ul>
+                </div>
+                <div>
+                    <h5><i class="fas fa-utensils me-2"></i>Preparación:</h5>
+                    <ol class="list-group list-group-numbered">
+                        ${receta.preparacion.map(paso => `<li class="list-group-item">${paso}</li>`).join('')}
+                    </ol>
+                </div>
+            `;
+
+            const modal = new bootstrap.Modal(document.getElementById('recetaModal'));
+            modal.show();
+        }
+
+        function comprarIngredientes() {
+            const mensaje = "¡Hola! Me interesa comprar los ingredientes para una de las recetas. ¿Pueden ayudarme?";
+            const urlWhatsApp = `https://wa.me/573113480761?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
+</body>
+</html>
+
