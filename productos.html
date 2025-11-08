@@ -173,5 +173,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Script de productos -->
     <script src="productos.js"></script>
+    <script>
+        // Esperar a que el script se cargue y luego renderizar productos
+        function renderizarTodosLosProductos() {
+            const contenedor = document.getElementById('productos-container');
+            if (!contenedor) {
+                setTimeout(renderizarTodosLosProductos, 100);
+                return;
+            }
+            
+            if (typeof productos === 'undefined' || typeof renderizarProductos === 'undefined') {
+                setTimeout(renderizarTodosLosProductos, 100);
+                return;
+            }
+            
+            // Renderizar todos los productos
+            renderizarProductos(productos, 'productos-container');
+        }
+        
+        // Intentar múltiples veces
+        renderizarTodosLosProductos();
+        document.addEventListener('DOMContentLoaded', renderizarTodosLosProductos);
+        window.addEventListener('load', renderizarTodosLosProductos);
+        setTimeout(renderizarTodosLosProductos, 500);
+        setTimeout(renderizarTodosLosProductos, 1000);
+    </script>
 </body>
 </html>

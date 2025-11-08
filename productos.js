@@ -832,8 +832,7 @@ const productos = [
         nombre: "Mantequilla de Maní 500g",
         categoria: "Comestibles",
         precio: 8500,
-        imagen: "https://allfitness.cl/wp-content/uploads/2021/05/MANTEQUILLA-DE-MANI-500-300x300.png
-        ",
+        imagen: "https://allfitness.cl/wp-content/uploads/2021/05/MANTEQUILLA-DE-MANI-500-300x300.png",
         descripcion: "Mantequilla de maní natural, sin azúcar.",
         stock: true,
         destacado: false
@@ -1023,18 +1022,19 @@ function formatearPrecio(precio) {
 
 // Función para renderizar productos
 function renderizarProductos(productosArray, contenedorId) {
-    
-    
     const contenedor = document.getElementById(contenedorId);
     if (!contenedor) {
-        
+        return;
+    }
+
+    if (!productosArray || productosArray.length === 0) {
+        contenedor.innerHTML = '<div class="col-12"><p class="text-center text-muted">No hay productos disponibles.</p></div>';
         return;
     }
 
     contenedor.innerHTML = '';
 
     productosArray.forEach((producto, index) => {
-        
         const productoHTML = `
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 producto-card">
@@ -1066,8 +1066,6 @@ function renderizarProductos(productosArray, contenedorId) {
         `;
         contenedor.innerHTML += productoHTML;
     });
-    
-    
 }
 
 // Función para obtener productos destacados
@@ -1091,19 +1089,10 @@ function agregarAlCarrito(productoId) {
 
 // Función para inicializar la página de productos
 function inicializarProductos() {
-    
-    
-    
-    // Renderizar todos los productos
     const contenedorTodos = document.getElementById('productos-container');
-    if (contenedorTodos) {
-        
+    if (contenedorTodos && productos && productos.length > 0) {
         renderizarProductos(productos, 'productos-container');
-    } else {
-        
     }
-    
-    // Ya no renderizamos productos destacados en la página de productos
 }
 
 // Función para inicializar productos en la página de inicio
@@ -1119,54 +1108,24 @@ function inicializarProductosHome() {
 
 // Inicializar cuando se carga la página
 document.addEventListener('DOMContentLoaded', function() {
-    
-    
-    // Verificar qué página estamos cargando
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    
     
     if (currentPage === 'index.html' || currentPage === '') {
         inicializarProductosHome();
     } else if (currentPage === 'productos.html') {
         inicializarProductos();
     }
-    
-    // Función de respaldo con delay para asegurar que todo esté cargado
-    setTimeout(function() {
-        
-        
-        // Verificar si los productos se cargaron correctamente
-        const contenedorTodos = document.getElementById('productos-container');
-        if (contenedorTodos && contenedorTodos.children.length === 0) {
-            
-            inicializarProductos();
-        }
-        
-        const contenedorHome = document.getElementById('productos-destacados-home');
-        if (contenedorHome && contenedorHome.children.length === 0) {
-            
-            inicializarProductosHome();
-        }
-    }, 500);
 });
 
-// Función de respaldo adicional cuando la ventana esté completamente cargada
+// Función de respaldo cuando la ventana esté completamente cargada
 window.addEventListener('load', function() {
-    
-    
-    // Verificar productos en página de productos
     const contenedorTodos = document.getElementById('productos-container');
     if (contenedorTodos && contenedorTodos.children.length === 0) {
-        
         renderizarProductos(productos, 'productos-container');
     }
     
-    // Ya no verificamos productos destacados en página de productos
-    
-    // Verificar productos destacados en home
     const contenedorHome = document.getElementById('productos-destacados-home');
     if (contenedorHome && contenedorHome.children.length === 0) {
-        
         const destacados = obtenerProductosDestacados().slice(0, 6);
         renderizarProductos(destacados, 'productos-destacados-home');
     }
@@ -1177,3 +1136,5 @@ window.productos = productos;
 window.renderizarProductos = renderizarProductos;
 window.obtenerProductosDestacados = obtenerProductosDestacados;
 window.agregarAlCarrito = agregarAlCarrito;
+window.inicializarProductos = inicializarProductos;
+
